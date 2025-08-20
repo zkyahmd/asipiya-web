@@ -276,7 +276,7 @@ return (
             >
               About{" "}
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Asipiya International
+                Asipiya Soft Solutions
               </span>
             </motion.h1>
 
@@ -292,7 +292,7 @@ return (
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1 }}
               className="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed text-center"
-            >Welcome to Asipiya International PVT Ltd, your gateway to comprehensive and
+            >Welcome to Asipiya Soft Solutions, your gateway to comprehensive and
               cutting-edge software solutions tailored for businesses of all sizes.
               At Asipiya, we pride ourselves on being your trusted partner to navigating the digital
               landscape, offering a range of services designed to enhance and streamline your
@@ -321,7 +321,7 @@ return (
               Asipiya At a <span className="bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">Glance</span>
             </h2>
             <p className="text-purple-100 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed">
-              Key facts and figures about Asipiya International
+              Key facts and figures about Asipiya Soft Solutions
             </p>
           </div>
 
@@ -636,7 +636,7 @@ vision, we cultivate strategic relationships built on trust and mutual success.<
               </div>
               
               <div className="relative h-full p-4 sm:p-6 flex flex-col justify-end z-10">
-                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-amber-800 group-hover:text-amber-900 transition-colors">Excellence in Execution</h3>
+                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-amber-800 group-hover:text-amber-900 transition-colors">Excellence in <br />Execution</h3>
                 <p className="text-sm sm:text-base text-gray-800 leading-relaxed font-bold">
  We pride ourselves on delivering results that not only meet
 but exceed expectations. Our commitment to excellence is reflected in every stage of our

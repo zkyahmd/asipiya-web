@@ -225,7 +225,7 @@ function BlogList() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                Insights, Tips & Trends from Asipiya
+                Insights, Tips & Trends from Asipiya Soft Solutions
               </motion.p>
             </motion.div>
           </VideoBanner>

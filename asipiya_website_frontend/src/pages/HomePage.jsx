@@ -296,7 +296,7 @@ const HomePage = () => {
               >
                 At{" "}
                 <span className="font-semibold text-purple-600">
-                  Asipiya Software Solutions
+                  Asipiya Soft Solutions
                 </span>
                 , we specialise in developing custom business software that
                 streamlines operations and drives digital transformation. <br />
