@@ -181,43 +181,43 @@ const HomePage = () => {
     {
       icon: MicroFinance,
       title: "Microfinance System",
-      desc: "Empowering financial inclusion with robust, scalable microfinance platforms.",
+      desc: "Empowering financial inclusion. With robust, scalable platforms. Microfinance platforms for all your needs.",
       link: "/services/microfinance",
     },
     {
       icon: InvoiceSystem,
       title: "Invoice System",
-      desc: "Automate billing, track payments, and get real-time analytics for smarter business.",
+      desc: "Automate billing processes. Track payments efficiently. Get real-time analytics for business.",
       link: "/services/invoice",
     },
     {
       icon: Pawning,
       title: "Pawning System",
-      desc: "Secure, compliant, and efficient gold loan management for modern financial institutions.",
+      desc: "Secure gold loan management. Compliant with regulations. Efficient for financial institutions.",
       link: "/services/pawning",
     },
     {
       icon: Erp,
       title: "ERP System",
-      desc: "Integrated solutions for finance, HR, inventory, and operations-tailored for your business.",
+      desc: "Integrated solutions for business. Finance, HR, inventory management. Tailored for your operations.",
       link: "/services/erp",
     },
     {
       icon: Leasing,
       title: "Leasing System",
-      desc: "Manage lease agreements, payments, and assets with digital workflows and compliance.",
+      desc: "Manage lease agreements easily. Handle payments digitally. Ensure compliance workflows.",
       link: "/services/leasing",
     },
     {
       icon: RealEstate,
       title: "Real Estate System",
-      desc: "Modern Real Estate Management. Simplify listings and enhance client experience.",
+      desc: "Modern property management. Simplify listings process. Enhance client experience greatly.",
       link: "/services/realestate",
     },
     {
       icon: DigitalMarketing,
       title: "Digital Marketing",
-      desc: "Boost your brand and reach your audience with targeted digital marketing solutions.",
+      desc: "Boost your brand presence. Reach target audience effectively. Targeted marketing solutions.",
       link: "/services/marketing",
     },
   ];
@@ -326,7 +326,7 @@ const HomePage = () => {
                 <SwiperSlide key={card.title}>
                   <motion.div
                     onClick={() => navigate(card.link)}
-                    className="w-full sm:w-[472px] h-[520px] sm:h-[720px] bg-cover bg-center flex items-end text-left cursor-pointer relative group overflow-hidden shadow-lg transition-all duration-300"
+                    className="w-full sm:w-[472px] h-[520px] sm:h-[600px] bg-cover bg-center flex items-end text-left cursor-pointer relative group overflow-hidden shadow-lg transition-all duration-300"
                     style={{ backgroundImage: `url(${card.icon})` }}
                     whileHover={{ scale: 1.03 }}
                     transition={{ duration: 0.5 }}
@@ -337,7 +337,7 @@ const HomePage = () => {
                     {/* Text Content */}
                     <div className="relative z-10 w-full px-4 sm:px-6 pb-8 sm:pb-10">
                       {/* Title */}
-                      <h3 className="text-2xl sm:text-4xl font-semibold text-purple-100 mb-2 leading-snug">
+                      <h3 className="text-2xl sm:text-3xl font-semibold text-purple-100 mb-3 leading-tight">
                         {card.title}
                       </h3>
 
@@ -349,18 +349,26 @@ const HomePage = () => {
                             e.stopPropagation();
                             navigate(card.link);
                           }}
-                        ></button>
+                          className="bg-purple-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-purple-600 transition"
+                        >
+                          Learn More
+                        </button>
                       </div>
 
                       {/* Desktop-only (visible on hover) */}
                       <motion.div className="hidden sm:block opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                        <p className="text-xl text-white mb-4">{card.desc}</p>
+                        <p className="text-lg text-white mb-4 leading-tight" dangerouslySetInnerHTML={{
+                          __html: card.desc.replace(/\. /g, '.<br />')
+                        }} />
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             navigate(card.link);
                           }}
-                        ></button>
+                          className="bg-purple-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-purple-600 transition"
+                        >
+                          Learn More
+                        </button>
                       </motion.div>
                     </div>
                   </motion.div>
