@@ -199,7 +199,7 @@ const HomePage = () => {
     {
       icon: Erp,
       title: "ERP System",
-      desc: "Integrated solutions for business. Finance, HR, inventory management. Tailored for your operations.",
+      desc: "Integrated solutions for finance. Finance, HR, inventory management. Tailored for your business.",
       link: "/services/erp",
     },
     {
@@ -211,7 +211,7 @@ const HomePage = () => {
     {
       icon: RealEstate,
       title: "Real Estate System",
-      desc: "Modern property management. Simplify listings process. Enhance client experience greatly.",
+      desc: "Modern Real Estate Management. Simplify listings process. Enhance client experience greatly.",
       link: "/services/realestate",
     },
     {
