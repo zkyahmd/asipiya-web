@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom"; // ✅ Import navigate
 import { FaFacebook, FaWhatsapp, FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import logoWhite from "../assets/logoWhite.png";
 
 const Footer = () => {
   const navigate = useNavigate(); // ✅ Hook to navigate
@@ -11,7 +12,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start gap-10">
         {/* Left: Logo & Description */}
         <div className="flex flex-col gap-4 min-w-[220px]">
-          <img src="/src/assets/logoWhite.png" alt="Asipiya Logo" className="w-40 h-[60px] mb-2" />
+          <img src={logoWhite} alt="Asipiya Logo" className="w-40 h-[60px] mb-2" />
           <p className="text-sm text-gray-200 max-w-xs">
             Asipiya empowers teams to transform raw data into clear, compelling visuals — making insights easier to share, understand, and act on.
           </p>
@@ -47,7 +48,7 @@ const Footer = () => {
             <a href="/terms-of-service" className="hover:text-purple-300">Terms Of Service</a>
             <a href="/legal-policy" className="hover:text-purple-300">Legal Policy</a>
             {/* <a href="#cookies" className="hover:text-purple-300">Cookies Settings</a> */}
-            <a href="/admin/signin" className="hover:text-purple-300">Admin</a>
+            {/* <a href="/admin/signin" className="hover:text-purple-300">Admin</a> */}
           </div>
         </div>
       </div>
