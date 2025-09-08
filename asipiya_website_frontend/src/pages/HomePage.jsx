@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import CountUp from "react-countup";
 import homePageBanner from "../assets/homePageBanner.jpeg";
+import homePageBannerVideo from "../assets/Video/HomePageBackground.mp4";
 import ChooseUsImage from "../assets/ChooseUsImage.jpg";
 import MicroFinance from "../assets/servicesImageHome/MicroFinance.jpg";
 import InvoiceSystem from "../assets/servicesImageHome/Invoice.jpg";
@@ -228,7 +229,7 @@ const HomePage = () => {
         <Navbar />
 
         <div className="font-sans text-gray-800 flex-1">
-          <PulseBeamsSecond bannerSrc={homePageBanner}>
+          <PulseBeamsSecond bannerSrc={homePageBannerVideo}>
             <motion.h1
               className="text-6xl text-white text-center font-extrabold mb-4"
               initial={{ opacity: 0, y: 40 }}

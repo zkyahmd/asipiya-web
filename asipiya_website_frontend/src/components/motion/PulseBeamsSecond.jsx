@@ -9,7 +9,7 @@ export const PulseBeamsSecond = ({ children, bannerSrc }) => {
       {/* Background Image */}
       <Parallax speed={-40} className="absolute inset-0 w-full h-full z-0">
         <video
-          src={"/src/assets/Video/HomePageBackground.mp4"}
+          src={bannerSrc}
           autoPlay
           muted
           loop
